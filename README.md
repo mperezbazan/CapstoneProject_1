@@ -10,6 +10,7 @@
 - Major languages
 - Frameworks
 - Technologies used
+- COCOGOOSE font family designed by Cosimo Lorenzo Pancini 
 
 ## Live Demo (if available)
 
