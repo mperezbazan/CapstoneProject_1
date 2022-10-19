@@ -37,6 +37,54 @@ $secondary: #d3d3d3;
   color: $primary;
   cursor: pointer;
 }
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: $light;
+  padding: 24px;
+}
+.menu-close {
+  position: absolute;
+  right: 12px;
+  top:0;
+  font-size: 24px;
+  border: none;
+  background: transparent;
+  color: $secondary;
+  padding: 12px;
+}
+.menu-close:hover {
+  color: $primary;
+  cursor: pointer;
+  padding: 12px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu-item {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 12px;
+  border-bottom: 2px solid $secondary;
+  cursor: pointer;
+  a {
+    color: $dark;
+    opacity: 0.7;
+  }
+}
+.menu-item:hover {
+  border-bottom: 2px solid $primary;
+  a {
+    color: $primary;
+    opacity: 1;
+  }
+}
 .header-links {
   display: flex;
   gap: 12px;
@@ -157,6 +205,7 @@ $secondary: #d3d3d3;
 .speakers-content {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .speakers-title {
@@ -270,6 +319,7 @@ $secondary: #d3d3d3;
 .headline-email {
   color: $dark;
   font-weight: bold;
+  text-decoration: underline;
 }
 .presentation-container {
   padding-inline: 24px;
@@ -412,6 +462,12 @@ $secondary: #d3d3d3;
     display: flex;
     flex-direction: row;
     padding-block: 48px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .speaker-container {
+    width: 40%;
   }
   .speaker-image {
     max-width: 100%;
