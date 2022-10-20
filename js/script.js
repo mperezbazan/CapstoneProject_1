@@ -1,27 +1,52 @@
 const speakers = [
   {
-    name: 'Yohai Benkler',
-    title: 'Professor at Harvard Law School',
-    description: 'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia. (Main books: The Wealth of the Network , Penguins and Leviathan )',
+    name: 'Matias Medina',
+    title: 'Singer',
+    description: 'Matias was born in Mendoza, he has a lot of time like singer',
     image: 'speaker_01.png',
   },
   {
-    name: 'Yohai Benkler',
-    title: 'Professor at Harvard Law School',
-    description: 'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia. (Main books: The Wealth of the Network , Penguins and Leviathan )',
+    name: 'Diego Viale',
+    title: 'Violinist',
+    description: 'Diego is one of the founder of the band, he study the instrument with Lele Lovato, He has more than 20 years of experience with the violin',
     image: 'speaker_02.png',
   },
   {
-    name: 'Yohai Benkler',
-    title: 'Professor at Harvard Law School',
-    description: 'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia. (Main books: The Wealth of the Network , Penguins and Leviathan )',
+
+    name: 'Daniel Sage',
+    title: 'Bass',
+    description: 'Daniel is from USA, but the music send to Argentina',
     image: 'speaker_03.png',
   },
   {
-    name: 'Yohai Benkler',
-    title: 'Professor at Harvard Law School',
-    description: 'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia. (Main books: The Wealth of the Network , Penguins and Leviathan )',
+    name: 'Franco Aguero',
+    title: 'Percussion',
+    description: 'Franco is an excellent dancer, director for the Argentinian Malambo Group.',
     image: 'speaker_04.png',
+  },
+  {
+    name: 'Maximiliano Guerrero',
+    title: 'Baterist',
+    description: 'Maxi is one of the most important baterist from Colombia, he was born in Bogota',
+    image: 'speaker_05.png',
+  },
+  {
+    name: 'Sebastian Maure',
+    title: 'Guitarist',
+    description: 'Sebastian started with another style of music, he play Jazz and Rock song in the beginning',
+    image: 'speaker_06.png',
+  },
+  {
+    name: 'Leonardo Ibacache',
+    title: 'Guitarist',
+    description: 'Leonardo is the youngest guy in the group, This is your first experience in a Tour',
+    image: 'speaker_07.png',
+  },
+  {
+    name: 'Guillermo Gomez',
+    title: 'Manager',
+    description: 'Guillermo is one of the most important manager of Argentina.',
+    image: 'speaker_08.png',
   },
 ];
 const menuButton = document.querySelector('.menu-button');

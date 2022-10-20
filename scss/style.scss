@@ -17,11 +17,16 @@ $secondary: #d3d3d3;
   }
 }
 
-.main-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -150,12 +155,12 @@ $secondary: #d3d3d3;
 
 .home-title {
   font-family: "COCOGOOSE", sans-serif;
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: 700;
   color: $primary;
   text-transform: uppercase;
-  background-image: url("../images/background1.jpg");
+  background-image: url("../images/background.jpg");
   background-size: 100%;
   background-position: 0 -100px;
   background-clip: content-box;
@@ -166,7 +171,7 @@ $secondary: #d3d3d3;
 
 .home-subtitle {
   font-family: "Lato", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   color: $primary;
 }
@@ -208,19 +213,31 @@ $secondary: #d3d3d3;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  align-items: flex-start;
 }
 
 .program-card {
   background-color: rgba($color: #fff, $alpha: 0.2);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 18px;
-  padding: 12px;
+  padding-block: 12px;
+  padding-inline: 8px;
+  min-height: 100px;
+  min-width: -webkit-fill-available;
+}
+
+.program-icon {
+  width: 48px;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  padding: 4px;
 }
 
 .program-title {
   color: $primary;
+  width: 75px;
 }
 
 .program-description {
@@ -336,7 +353,7 @@ $secondary: #d3d3d3;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 100px;
-  padding: 24px;
+  padding: 48px 24px;
   align-items: center;
   gap: 12px;
 }
@@ -421,14 +438,25 @@ $secondary: #d3d3d3;
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  li {
+    cursor: pointer;
+  }
 }
 
 .history-card {
   position: relative;
 }
 
+.history-card-content:hover {
+  .overlay {
+    display: none;
+  }
+}
+
 .history-card-image {
   width: 100%;
+  max-height: 173px;
   position: relative;
   background-color: #ec5242;
   filter: saturate(0.9);
@@ -478,7 +506,44 @@ $secondary: #d3d3d3;
   .main-header {
     padding-inline: 15%;
   }
-
+  .top-header {
+    background-color: $dark;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .top-header-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+    padding-inline: 10%;
+  }
+  
+  .top-header-item {
+    font-family: 'Lato', sans-serif;
+    color: $light;
+    background-color: transparent;
+    border: 0;
+    padding-block: 5px;
+    font-size: 14px;
+    align-self: center;
+    cursor: pointer;
+  
+    img {
+       filter: brightness(100%)
+    }
+  
+    button:hover {
+      cursor: pointer;
+    }
+  }
+  
+  
   .home-container {
     padding-inline: 15%;
     background-image: url("../images/main_big.png");
@@ -491,8 +556,8 @@ $secondary: #d3d3d3;
   }
 
   .home-title {
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 100px;
+    line-height: 120px;
   }
 
   .home-description-container {
@@ -508,6 +573,7 @@ $secondary: #d3d3d3;
   .program-container {
     background-size: 30px;
     padding-inline: 15%;
+    padding-bottom: 62px;
   }
 
   .program-list {
@@ -521,10 +587,12 @@ $secondary: #d3d3d3;
     flex-direction: column;
     padding: 16px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     gap: 8px;
     max-width: 180px;
+    min-width: 15%;
+    min-height: 200px;
   }
 
   .program-title {
@@ -544,7 +612,7 @@ $secondary: #d3d3d3;
     flex-direction: row;
     padding-block: 48px;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
   }
 
@@ -563,8 +631,8 @@ $secondary: #d3d3d3;
   }
 
   .headline-title {
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 64px;
+    line-height: 68px;
     width: 70%;
     padding: 24px;
   }
@@ -594,6 +662,10 @@ $secondary: #d3d3d3;
   .presentation-image-container {
     width: auto;
     padding: 24px 48px;
+  }
+  
+  .presentation-text {
+    width: 80%;
   }
 
   .history-container {
@@ -631,6 +703,25 @@ $secondary: #d3d3d3;
 
   .sm-none {
     display: flex;
+  }
+}
+
+.disabled {
+  cursor: default;
+  
+  a {
+    cursor: default;
+    color: $secondary;
+  }
+}
+
+.disabled:hover {
+  border: none;
+  cursor: default;
+
+  a {
+    cursor: default;
+    color: $secondary;
   }
 }
 
