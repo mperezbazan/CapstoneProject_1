@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("http://fonts.cdnfonts.com/css/cocogoose");
 $light: #f7f7f8;
 $primary: #ec5242;
 $dark: #272a31;
@@ -359,7 +358,7 @@ $secondary: #d3d3d3;
 }
 
 .headline-title {
-  font-family: "COCOGOOSE", sans-serif;
+  font-family: "COCOGOOSE", "Lato", sans-serif;
   font-size: 28px;
   line-height: 36px;
   font-weight: 400;
