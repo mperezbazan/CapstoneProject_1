@@ -76,5 +76,7 @@ speakers.forEach((speaker, index) => {
   </div>
   `;
   article.innerHTML = innerHtml;
-  speakersContainer.appendChild(article);
+  if (speakersContainer) {
+    speakersContainer.appendChild(article);
+  }
 });
