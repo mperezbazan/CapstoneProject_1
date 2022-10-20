@@ -350,8 +350,8 @@ $secondary: #d3d3d3;
 
 .footer-container {
   display: flex;
-  gap: 12px;
-  padding: 18px;
+  gap: 8px;
+  padding: 12px;
   justify-content: center;
 }
 
@@ -511,6 +511,17 @@ $secondary: #d3d3d3;
   color: $light;
   text-align: center;
   z-index: 2;
+}
+
+.footer-button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-media-button {
+  padding: 3px;
+  filter: invert(1);
 }
 
 .lg-none {

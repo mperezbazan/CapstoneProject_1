@@ -339,8 +339,8 @@
 
 .footer-container {
   display: flex;
-  gap: 12px;
-  padding: 18px;
+  gap: 8px;
+  padding: 12px;
   justify-content: center;
 }
 
@@ -497,6 +497,17 @@
   color: #f7f7f8;
   text-align: center;
   z-index: 2;
+}
+
+.footer-button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-media-button {
+  padding: 3px;
+  filter: invert(1);
 }
 
 .lg-none {

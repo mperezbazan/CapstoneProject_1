@@ -15,8 +15,6 @@
 - Javascript
 - COCOGOOSE font family designed by Cosimo Lorenzo Pancini 
 
-Original design idea by Cindy Shin in Behance.
-
 ## Live Demo
 
 [Live Demo Link](https://mperezbazan.github.io/CapstoneProject_1/)
@@ -57,6 +55,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - This website is inspired in a local band that have the dream to travel around the world
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 ## 📝 License
 
